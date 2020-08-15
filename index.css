@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+@import "reset.css";
+
+:root {
+  --color-blue: #00d1f2;
+  --color-purple: #ba28f7;
+  --color-yellow: #eabf35;
+  --color-green: #3fe4a0;
+  --color-red: #e73e39;
+  --color-black: #212526;
+}
+
+body {
+  color: var(--color-yellow);
+  font-family: "Do Hyeon", sans-serif, "Segoe UI", Tahoma, Geneva, Verdana,
+    sans-serif;
+  display: grid;
+  justify-content: center;
+  margin-top: 16em;
+  font-size: 20px;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 4px;
+  background-color: wheat;
+  opacity: 0.3;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom-color: var(--color-green);
+  height: 30px;
+}
+input::placeholder {
+  color: var(--color-black);
+  font-weight: 700;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+li {
+  margin-top: 10px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.js-clock {
+  font-size: 150px;
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.showing {
+  display: flex;
+  justify-content: center;
+  color: var(--color-red);
+  font-size: 30px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+
+.js-toDoList {
+  display: grid;
+  justify-content: center;
+  color: var(--color-red);
+  font-size: 30px;
+}
+
+.js-weather {
+  margin-top: 6px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
